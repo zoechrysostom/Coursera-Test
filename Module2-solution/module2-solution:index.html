@@ -9,130 +9,221 @@
 
 <style>
 
-* {
-	box-sizing: border-box;
-}
-
-h1 {
-	text-align: center;
-	margin-bottom: 20px;
-	font-family: Helvetica;
-}
-div {
-  position: relative;
-  top: 40px;
+* 
+{
+  box-sizing: border-box;
   font-family: Helvetica;
 }
-	
-
-p{
-  border: 0.5px solid black;
-  width: 90px;
+h1{
   text-align: center;
-  font-family: Helvetica;
-  color: black;
+  margin-bottom: 30px;
+}
+section{
+  background-color: grey;
   position: relative;
-  bottom: 27px;
-  left: 345px;
-}
-#p1 {
-	background-color: red;
-
-
+  margin: 15px;
+  padding: 0;
 }
 
-#p2 {
-	background-color: orange;
-
-
+.title
+{
+  font-size: 1.5em;
+  position: absolute;
+  top:0px;
+  right:0px;
+  margin-bottom: 0px;
+  border: 1px solid black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.title#title1{
+  background-color: red;
+}
+.title#title2{
+  background-color: purple;
+}
+.title#title3{
+  background-color: orange;
 }
 
-#p3 {
-	background-color: purple;
-
+p
+{
+  padding: 15px 5px 0px 5px;
 }
-
-
-div#box1 {
-
-	padding: 10px;
-	border: 2px solid black;
-	margin: 5px;
-  background-color: grey;
-}
-
-div#box2 {
-
-	padding: 10px;
-	border: 2px solid black;
-	margin: 5px;
-  background-color: grey;
-}
-
-div#box3 {
-
-	padding: 10px;
-	border: 2px solid black;
-	margin: 5px;
-   background-color: grey;
-}
-/* Simple Responsive Framework. */
-
-.row {
-	width: 100%;
-}
-
-/************ Desktop Version ***********/
-
-@media (min-width: 992px) {
-	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+@media (max-width: 767px)
+{
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12
+  {
     float: left;
-    border:;
+    border: 1px solid black;
   }
-  .col-md-1 {
+  .col-sm-1
+  {
     width: 8.33%;
   }
-  .col-md-2 {
+  .col-sm-2
+  {
     width: 16.66%;
   }
-  .col-md-3 {
+  .col-sm-3
+  {
     width: 25%;
   }
-  .col-md-4 {
-    width: 33.33%;
+  .col-sm-4
+  {
+    width: 33%;
   }
-  .col-md-5 {
+  .col-sm-5
+  {
     width: 41.66%;
   }
-  .col-md-6 {
+  .col-sm-6
+  {
     width: 50%;
   }
-  .col-md-7 {
+  .col-sm-7
+  {
     width: 58.33%;
   }
-  .col-md-8 {
+  .col-sm-8
+  {
     width: 66.66%;
   }
-  .col-md-9 {
+  .col-sm-9
+  {
     width: 74.99%;
   }
-  .col-md-10 {
+  .col-sm-10
+  {
     width: 83.33%;
   }
-  .col-md-11 {
+  .col-sm-11
+  {
     width: 91.66%;
   }
-  .col-md-12 {
+  .col-sm-12
+  {
     width: 100%;
   }
-}
 
+} 
+@media (min-width: 768px) and (max-width: 991px)
+{
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{
+    float: left;
+    border: 1px solid black;
+  }
+  .col-md-1
+  {
+    width: 8.33%;
+  }
+  .col-md-2
+  {
+    width: 16.66%;
+  }
+  .col-md-3
+  {
+    width: 25%;
+  }
+  .col-md-4
+  {
+    width: 33%;
+  }
+  .col-md-5
+  {
+    width: 41.66%;
+  }
+  .col-md-6
+  {
+    width: 50%;
+  }
+  .col-md-7
+  {
+    width: 58.33%;
+  }
+  .col-md-8
+  {
+    width: 66.66%;
+  }
+  .col-md-9
+  {
+    width: 74.99%;
+  }
+  .col-md-10
+  {
+    width: 83.33%;
+  }
+  .col-md-11
+  {
+    width: 91.66%;
+  }
+  .col-md-12
+  {
+    width: 100%;
+  }
+  
+} 
+@media (min-width: 992px)
+{
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12{
+    float: left;
+    border: 1px solid black;
+  }
+  .col-lg-1
+  {
+    width: 8.33%;
+  }
+  .col-lg-2
+  {
+    width: 16.66%;
+  }
+  .col-lg-3
+  {
+    width: 25%;
+  }
+  .col-lg-4
+  {
+    width: 33%;
+  }
+  .col-lg-5
+  {
+    width: 41.66%;
+  }
+  .col-lg-6
+  {
+    width: 50%;
+  }
+  .col-lg-7
+  {
+    width: 58.33%;
+  }
+  .col-lg-8
+  {
+    width: 66.66%;
+  }
+  .col-lg-9
+  {
+    width: 74.99%;
+  }
+  .col-lg-10
+  {
+    width: 83.33%;
+  }
+  .col-lg-11
+  {
+    width: 91.66%;
+  }
+  .col-lg-12
+  {
+    width: 100%;
+  }
+
+} 
 
 /************ Tablet Version ***********/
 @media (min-width: 768px) and (max-width:991px) {
 	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
-    border:;
   }
   .col-sm-1 {
     width: 8.33%;
@@ -176,7 +267,6 @@ div#box3 {
 @media (max-width:767px) {
 	.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
     float: left;
-    border:;
   }
   .col-xs-1 {
     width: 8.33%;
@@ -219,26 +309,27 @@ div#box3 {
 </style>
 </head>
 <body>
-	<h1> Our Menu </h1>
+  <h1> Our Menu </h1>
 
-	<div class="row">
-
-		<div id="box1" class="col-md-4 col-sm-6 col-xs-12"> 
-			<p id="p1">Chicken</p> 
-			
-		</div>
-
-
-		<div id="box2" class="col-md-4 col-sm-6 col-xs-12">
-			<p id="p2">Beef</p> 
-			
-		</div>
-
-		<div id="box3" class="col-md-4 col-sm-6 col-xs-12">
-			<p id="p3">Sushi</p> 
-			
-		</div>
+  <section class="col-lg-4 col-md-6 col-sm-12"> 
+    <div>
+    <div class="title" id="title1"> Beef </div>
+    <p>Text </p> 
   </div>
+   </section>
 
+  <section class="col-sm-12 col-md-6 col-lg-4">     
+    <div>
+      <div class="title" id="title2"> Sushi </div>
+    <p>Text
+    </p> 
+    </div>
+  </section>
+  <section class="col-sm-12 col-md-12 col-lg-4"> 
+    <div>
+    <div class="title" id="title3"> Chicken </div>
+    <p>Text
+    </p>  
+  </div>
+  </section>
 </body>
-</html>
